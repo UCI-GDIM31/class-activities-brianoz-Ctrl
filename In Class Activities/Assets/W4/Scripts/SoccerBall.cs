@@ -50,7 +50,7 @@ public class SoccerBall : MonoBehaviour
     // Once you've created MadeGoal,
     //      move your Debug.Log() statement into MadeGoal, and
     //      call MadeGoal from inside your if statement in OnTriggerEnter.
-    private void OnTriggerEnter (Collider other) { if (other.CompareTag("Goal")) { MadeGoal(); } }
+   
     private void MadeGoal() { Debug.Log("GOAL!"); }
     // STEP 4 -------------------------------------------------------------
     // _goalVFX is a ParticleSystem, a Component for creating VFX.
@@ -58,7 +58,7 @@ public class SoccerBall : MonoBehaviour
     // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
     //
     // Call Play on _goalVFX.
-    private void MadeGoal() { _goalVFX.Play(); }
+    //private void{ _goalVFX.Play();
     // STEP 4 -------------------------------------------------------------
 
 
